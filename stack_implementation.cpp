@@ -68,5 +68,28 @@ class Stack
 
 int main()
 {
+    Stack st(5);
+    st.push(22);
+    st.push(45);
+    st.push(78);
+
+    cout<<st.peek() <<endl;
+    st.pop();
+    cout <<st.peek()<< endl;
+    st.pop();
+    cout << st.peek() << endl;
+
+    st.pop();
+    cout << st.peek() << endl;
+
+    if(st.isEmpty())
+    {
+        cout<<"The stack is empty"<<endl;
+    }
+    else
+    {
+        cout<<"Stack is not empty"<<endl;
+    }
+
     return 0;
 }
